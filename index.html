@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="box"><img src="download.png" alt=""></div>
   <div class="menu-container">
     <!-- Left Side: Category Selection -->
     <div class="category-box">
@@ -21,6 +22,48 @@
     <!-- Right Side: Menu Items Display -->
     <div class="menu-items">
       <div id="pizza" class="category-content">
+        <div class="item">
+          <img src="menu-2.jpg" alt="Pizza Margherita">
+          <div class="details">
+            <h3>Pizza Margherita</h3>
+            <p class="price">$10.99</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="menu-2.jpg" alt="Pepperoni Pizza">
+          <div class="details">
+            <h3>Pepperoni Pizza</h3>
+            <p class="price">$12.99</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="menu-2.jpg" alt="Pizza Margherita">
+          <div class="details">
+            <h3>Pizza Margherita</h3>
+            <p class="price">$10.99</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="menu-2.jpg" alt="Pepperoni Pizza">
+          <div class="details">
+            <h3>Pepperoni Pizza</h3>
+            <p class="price">$12.99</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="menu-2.jpg" alt="Pizza Margherita">
+          <div class="details">
+            <h3>Pizza Margherita</h3>
+            <p class="price">$10.99</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="menu-2.jpg" alt="Pepperoni Pizza">
+          <div class="details">
+            <h3>Pepperoni Pizza</h3>
+            <p class="price">$12.99</p>
+          </div>
+        </div>
         <div class="item">
           <img src="menu-2.jpg" alt="Pizza Margherita">
           <div class="details">
@@ -52,9 +95,65 @@
             <p class="price">$3.00</p>
           </div>
         </div>
+        <div class="item">
+          <img src="menu-2.jpg" alt="Cola">
+          <div class="details">
+            <h3>Cola</h3>
+            <p class="price">$2.50</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="menu-2.jpg" alt="Lemonade">
+          <div class="details">
+            <h3>Lemonade</h3>
+            <p class="price">$3.00</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="menu-2.jpg" alt="Cola">
+          <div class="details">
+            <h3>Cola</h3>
+            <p class="price">$2.50</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="menu-2.jpg" alt="Lemonade">
+          <div class="details">
+            <h3>Lemonade</h3>
+            <p class="price">$3.00</p>
+          </div>
+        </div>
       </div>
 
       <div id="desserts" class="category-content" style="display: none;">
+        <div class="item">
+          <img src="menu-2.jpg" alt="Cheesecake">
+          <div class="details">
+            <h3>Cheesecake</h3>
+            <p class="price">$5.99</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="menu-2.jpg" alt="Chocolate Cake">
+          <div class="details">
+            <h3>Chocolate Cake</h3>
+            <p class="price">$6.50</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="menu-2.jpg" alt="Cheesecake">
+          <div class="details">
+            <h3>Cheesecake</h3>
+            <p class="price">$5.99</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="menu-2.jpg" alt="Chocolate Cake">
+          <div class="details">
+            <h3>Chocolate Cake</h3>
+            <p class="price">$6.50</p>
+          </div>
+        </div>
         <div class="item">
           <img src="menu-2.jpg" alt="Cheesecake">
           <div class="details">
@@ -82,7 +181,7 @@
       
       .menu-container {
         display: flex;
-        padding: 20px 5px 20px 5px;
+        padding: 130px 5px 20px 5px;
       }
       
       .category-box {
@@ -91,6 +190,8 @@
         padding: 15px;
         border-radius: 10px;
         color: white;
+        position: fixed;
+        height: 83vh;
       }
       
       .category-box h2 {
@@ -118,7 +219,8 @@
       
       .menu-items {
         width: 80%;
-        padding-left: 5px;
+        padding-left: 110px;
+        width: 235px;
       }
       
       .category-content {
@@ -131,15 +233,15 @@
         border: 1px solid #ddd;
         border-radius: 10px;
         margin: 10px 0;
-        padding: 15px 5px 15px 5px;
+        padding: 15px 0px 15px 5px;
         display: flex;
         align-items: center;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
       
       .item img {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         border-radius: 10px;
         margin-right: 20px;
       }
@@ -150,7 +252,7 @@
       
       .item h3 {
         margin: 0;
-        font-size: 18px;
+        font-size: 14px;
         color: #333;
       }
       
@@ -166,6 +268,21 @@
         color: #666;
         margin: 0;
       }
+      .box{
+        background-color: #333;
+        position: fixed;
+        width: 100%;
+        z-index: 55;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .box img{
+        height: 90px;
+        width: 90px;
+        padding: 10px 0px 10px 0px;
+        border-radius: 50%;
+    }
   </style>
   <script>
     function showCategory(category) {
